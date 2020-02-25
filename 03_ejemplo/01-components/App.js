@@ -5,13 +5,12 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.box1}>
-      <Text style={styles.text}>Hello Cesde.</Text>
+      <View style={styles.box3}></View>
+      <View style={styles.box4}></View>
       </View>
       <View style={styles.box2}>
-      <Text style={styles.text}>Hello Cesde.</Text>
-      </View>
-      <View style={styles.box3}>
-      <Text style={styles.text}>Hello Cesde.</Text>
+      <View style={styles.box4}></View>
+      <View style={styles.box3}></View>
       </View>
     </View>
   );
@@ -20,27 +19,28 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff'
-  },
-  text:
-  {
-    color: '#000',
-    textAlign: 'center'
-    
+    backgroundColor: '#fff' 
   },
   box1:
   {
-    flex: 2.2,
-    backgroundColor: '#FFEB3B'
+    flex: 1,
+    backgroundColor: '#FFEB3B',
+    flexDirection:"row"
   },
   box2:
   {
-    flex: 1.5,
-    backgroundColor: '#1976D2'
+    flex: 1,
+    backgroundColor: '#1976D2',
+    flexDirection:"row"
   },
   box3:
   {
     flex: 1,
     backgroundColor: '#D32F2F'
+  },
+  box4:
+  {
+    flex: 1,
+    backgroundColor: '#fff'
   }
 });
